@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html>
+   <head>
+     <title>30DíasDeJS:Inline Script</title>
+   </head>
+
+   <body>
+
+    <!--console.log y script interno-->
+    <script>
+        console.log('hola mario')
+    </script>
+
+    <!--script en linea-->
+    <button onclick="alert('Texto de primer boton scirpt en linea')">Primer boton script en linea</button>
+
+    <!--script externo-->
+    <script src="introduction.js"></script>
+   </body>
+
+   <p>Las variables sirven para almacenar datos en la memoria. Pueden ser: var, let y const</p>
+
+   <script>
+    //Variables
+
+    // Declarando diferentes variables de diferentes tipos de datos
+let nombre = 'Asabeneh' // nombre de una persona
+let apellido = 'Yetayeh' // apellido de una persona
+let pais = 'Finland' // país
+let ciudad = 'Helsinki' // ciudad capital
+let edad = 100 // edad en años
+let estaCasado = true
+
+console.log(nombre, apellido, pais, ciudad, edad, estaCasado)
+
+
+// Declarando variables con valores numéricos
+const gravedad = 9.81 // gravedad terrestre en m/s2
+const puntoDeEbullicion  = 100 // punto de ebullición del agua, temperatura en oC
+const PI = 3.14 // constante geométrica
+
+console.log(gravedad, puntoDeEbullicion, PI)
+
+
+// Las variables también pueden ser declaradas en una línea separada por una coma
+trabajo = 'profesor';
+viveEn = 'Finlandia';
+console.log(nombre, trabajo, viveEn);
+   </script>
+
+   <script>
+    //Tipos de datos
+    console.log(typeof 'Mario')//String
+    console.log(typeof 5)//numero entero
+    console.log(typeof 1.5)//numero decimal
+    console.log(typeof false)//boleano
+    console.log(typeof null)//null object
+    console.log(typeof undefined)//undefined
+   </script>
+</html>
