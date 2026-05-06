@@ -31,3 +31,20 @@ console.log(newSentence)
 //4. Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
 
 let annualIncome = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+
+let digitPattern = /\d+/g;
+let salary = annualIncome.match(digitPattern)
+
+console.log(salary)
+
+let inc1 = parseInt(salary[0]);
+let inc2 = parseInt(salary[1]);
+let inc3 = parseInt(salary[2]);
+
+console.log(inc1)
+console.log(inc2)
+console.log(inc3)
+
+let totalIncome = inc1 + inc2 + inc3
+console.log(`Total Income: ${totalIncome}`);
+console.log('Total Income: ' + totalIncome);
