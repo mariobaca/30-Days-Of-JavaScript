@@ -28,3 +28,6 @@ let pregunta = /\?/gi
 let newSentence = sentence1.replace(porcentaje, '').replace(pesos, '').replace(arroba, '').replace(iii, '').replace(numeral, '').replace(numeral, '').replace(admiracion, '').replace(pregunta, '').replace(coma, '')
 console.log(newSentence)
 
+//4. Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+
+let annualIncome = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
