@@ -57,3 +57,14 @@ console.log(allSeconds) // 1578092201341, this is the number of seconds passed f
 
 const timeInSeconds = new Date().getTime()
 console.log(allSeconds == timeInSeconds) // true
+
+
+//FORMATO LEGILBE PARA LOS HUMANOS
+const ahora = new Date();
+const year = now.getFullYear(); // return años
+const month = now.getMonth() + 1; // return meses(0 - 11)
+const date = now.getDate(); // return días (1 - 31)
+const hours = now.getHours(); // return horas (0 - 23)
+const minutes = now.getMinutes(); // return minutos (0 -59)
+
+console.log(`${date}/${month}/${year} ${hours}:${minutes}`); // 4/1/2020 0:56

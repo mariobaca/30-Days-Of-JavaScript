@@ -1,0 +1,68 @@
+//Ejercicios Nivel 1
+
+//1. Declare las siguientes variables; firstName, lastName, country, city, age, isMarried, year y asignar un valor, use el operador typeof para verificar diferentes tipos de datos.
+let firstName = 'Mario'
+let lastName = 'Baca'
+let country = 'Colombia'
+let city = 'Bogota'
+let age = 38
+let isMarried = false
+let year = 2026
+
+console.log(typeof firstName, typeof lastName, typeof country, typeof city, typeof age, typeof isMarried, typeof year)
+
+//2. Verifique si typeof '10' es igual a 10
+let number = 10
+console.log(typeof number === typeof 10) //true
+console.log(typeof '10' ===  10) //false
+
+//3. Verifique si parseInt('9.8') es igual a 10
+console.log(parseInt('9.8') == 10) //false
+
+//4. Verifique cualquier valor booleano true o false.
+    //Escriba tres declaraciones de JavaScript que proporcionen un valor verdadero.
+    //Escriba tres declaraciones de JavaScript que proporcionen un valor falso.
+
+console.log(3 > 1)//true
+console.log(4 === 4)//true
+console.log(4 > 1)//true
+
+console.log(3 < 1)//false
+console.log(4 === 1)//false
+console.log(4 < 1)//false
+
+//5. Calcule primero el resultado de la siguiente expresión de comparación sin usar console.log(). Después de decidir el resultado, confirmelo usando console.log()
+
+console.log('ejercicio 5')
+console.log(4 > 3)//4 > 3 // true
+console.log(4 >= 3)//4 >= 3 // true
+console.log(4 < 3)//4 < 3 // false
+console.log(4 <= 3)//4 <= 3 // false
+console.log(4 == 4)//4 == 4 // true
+console.log(4 === 4)//4 === 4 // true
+console.log(4 != 4)//4 != 4 //false
+console.log(4 !== 4)//4 !== 4 //false
+console.log(4 != '4')//4 != '4' //false
+console.log(4 == '4')//4 == '4' //true
+console.log(4 === '4')//4 === '4' //false
+
+//6. Encuentre la longitud de Python y jargon y haga una declaración de comparación falsa
+console.log('ejercicio 6')
+let python = "Python"
+let jargon = "jargon"
+console.log(python.length)
+console.log(jargon.length)
+console.log(python.length !== jargon.length)
+
+//7. Utilice el objeto Date para realizar las siguientes actividades
+console.log('ejercicio 7')
+const present = new Date()
+console.log(present)
+console.log(present.getFullYear())//¿Qué año es hoy?
+console.log(present.getMonth())//¿Qué mes es hoy con un número?
+console.log(present.getDate())//¿Qué fecha es hoy?
+console.log(present.getDay())//¿Qué día es hoy con un número?
+console.log(present.getHours())//¿Cuál es la hora actual?
+console.log(present.getMonth())//¿Cuántos minutos hay actualmente?
+console.log(Date.now())//Averigüe el número de segundos transcurridos desde el 1 de enero de 1970 hasta ahora.
+
