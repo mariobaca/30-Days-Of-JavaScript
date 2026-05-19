@@ -1,0 +1,61 @@
+//Ejercicios Nivel 2
+
+//1. Escriba un script que solicite al usuario que ingrese la base y la altura del triángulo y calcule el área de un triángulo (área = 0,5 x b x h).
+
+let base = prompt("Ingrese el numero de base", "El número va aquí");
+console.log(base);
+
+let altura = prompt("Ingrese el numero de altura", "El número va aquí");
+console.log(altura);
+
+let area = 0.5
+
+let calculo = area * base * altura;
+alert("El área del triángulo es:" + calculo);
+
+//2. Escriba un script que solicite al usuario que ingrese el lado a, el lado b y el lado c del triángulo y calcule el perímetro del triángulo (perímetro = a + b + c)
+
+let ladoA = prompt("Ingrese el lado a", "El número va aquí");
+let numladoA = parseInt(ladoA)
+console.log(numladoA);
+
+let ladoB = prompt("Ingrese el lado b", "El número va aquí");
+let numladoB = parseInt(ladoB)
+console.log(numladoB);
+
+let ladoC = prompt("Ingrese el lado c", "El número va aquí");
+let numladoC = parseInt(ladoC)
+console.log(numladoC);
+
+let calculoPerimetro = numladoA + numladoB + numladoC;
+alert("El perimetro del triangulo es:" + calculoPerimetro);
+
+//3. Obtenga el largo y el ancho usando prompt y calcule el área del rectángulo (área = largo x ancho y el perímetro del rectángulo (perímetro = 2 x (largo + ancho))
+let largoRect = Number(prompt("Ingrese el largo del rectangulo", "El número va aquí"));
+let anchoRect = Number(prompt("Ingrese el ancho del rectangulo", "El número va aquí"));
+
+let areaRect = largoRect * anchoRect;
+let perimetroRect = 2 * (largoRect + anchoRect)
+
+alert("El área del rectangulo es:" + areaRect);
+alert("El perimetro del rectangulo es:" + perimetroRect);
+
+//4. Obtenga el radio usando prompt y calcule el área de un círculo (área = pi x r x r) y la circunferencia de un círculo (c = 2 x pi x r) donde pi = 3.14.
+const piVal = 3.14
+let radio = Number(prompt("Ingrese el radio del circulo", "El número va aquí"));
+
+let areaCirculo = piVal * radio * radio;
+let circunCirculo = 2 * piVal * radio;
+
+// alert("El área del circulo es:" + areaCirculo);
+// alert("La circunferenca del circulo es:" + circunCirculo);
+console.log(`El área del circulo es: ${areaCirculo} mientras que la circunferenca del circulo es: ${circunCirculo}`)
+
+
+
+//9. Calcule la pendiente, la intersección X y la intersección Y de y = 2x -2
+let horas = Number(prompt("Ingrese las horas", "El número va aquí"));
+let tarifaHora = Number(prompt("Ingrese la tarifa por hora", "El número va aquí"));
+let salarioSemanal = tarifaHora * horas;
+alert("Su ganancia semanal es:" + salarioSemanal);
+
