@@ -1,0 +1,45 @@
+//ejercicios nivel 1
+
+//1. Obtenga la entrada del usuario usando el aviso ("Ingrese su edad:"). Si el usuario tiene 18 años o más, muestre el mensaje: 'Tiene la edad suficiente para conducir', pero si no tiene 18 años, brinde otro mensaje que indique que debe esperar la cantidad de años que necesita para cumplir 18.
+
+let userPrompt = Number(prompt("Ingrese su edad"));
+let legalAge = 18;
+
+if (userPrompt >= legalAge){
+    console.log(`Tienes ${userPrompt} años. Edad suficiente para conducir`)
+} else if (userPrompt < legalAge){
+    console.log(`Tienes ${userPrompt} años. Debes esperar ${legalAge - userPrompt} años para cumplir ${legalAge} y poder conducir.`)
+}
+
+
+//2. Compara los valores de myAge y yourAge usando if... else. Según la comparación, registre el resultado en la consola indicando quién es mayor (tú o yo). Utilice prompt(“Ingrese su edad:”) para obtener la edad como entrada.
+let myAge = 38;
+let yourAge = Number(prompt("Ingrese su edad"));
+console.log(`Mi edad: ${myAge}`)
+console.log(`Tu edad: ${yourAge}`)
+
+if (myAge >= yourAge){
+    console.log(`Tienes ${yourAge} años. Eres ${myAge - yourAge} menor que yo`)
+} else if (myAge < yourAge){
+    console.log(`Tienes ${yourAge} años. Eres ${yourAge - myAge} mayor que yo`)
+}
+
+
+//3. Si a es mayor que b, devuelve 'a es mayor que b'; de lo contrario, 'a es menor que b'. Trate de implementarlo de maneras diferentes:
+//Usando if else
+let a = 4;
+let b = 3;
+
+if (a > b){
+    console.log(`a es mayor que b`)
+} else {
+    console.log(`a es menor que b`)
+}
+
+//operador ternario.
+a > b ? console.log(`a es mayor que b`):console.log(`a es menor que b`)
+
+
+//4. Los números pares son divisibles por 2 y el resto es cero. ¿Cómo verificar si un número es par o no usando JavaScript?
+let number = parseInt(prompt("Enter a number: "));
+number % 2 === 0 ? console.log(`${number} is an even number`): console.log(`${number} is an odd number`);

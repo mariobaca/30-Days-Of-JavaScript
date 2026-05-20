@@ -1,0 +1,36 @@
+// ejercicios nivel 3
+
+//1. Escribe un programa que diga el número de días en un mes.
+
+let mes = prompt("Escribe un mes del año").toLowerCase();
+let temporada;
+console.log('Escribiste el mes de: ' + mes)
+
+switch (mes) {
+    case "enero":
+    case "marzo":
+    case "mayo":
+    case "julio":
+    case "agostomayo":
+    case "octubre":
+    case "diciembre":
+        dias = "31";
+        console.log(`${mes} tiene ${dias} días.`);
+    break;
+
+    case "abril":
+    case "junio":
+    case "septiembre":
+    case "noviembre":
+        dias = "30";
+        console.log(`${mes} tiene ${dias} días.`);
+    break;
+
+    case "febrero":
+        dias = "28";
+        console.log(`${mes} tiene ${dias} días.`);
+    break;
+
+    default:
+    console.log("No es un mes valido");
+}

@@ -1,0 +1,152 @@
+// Dia 5 - arrays - teoria
+
+// https://jseditor.io/
+
+// Array almacena multiples valores
+// Sintaxis
+
+// Con un constructor de arrays
+const arr = Array();
+// or
+// let arr = new Array()
+console.log(arr); // []
+
+// Con corchetes
+// sintaxis
+// Esto es lo más recomendable para crear una lista vacía
+const arr = [];
+console.log(arr);
+
+
+// Arrays con valores
+const numeros = [0, 1, 2, 3, 4, 5]
+console.log("Numeros del array: " + numeros);
+console.log("Cantidad de numeros del array: " + numeros.length)
+////Acceder a los elementos de un array
+console.log("Primer elemento del array: " + numeros[1])
+console.log("Segundo elemento del array: " + numeros[1])
+console.log("Ultimo elemento del array: " + numeros[5])
+
+let lastIndex = numeros.length - 1
+console.log("Ultimo elemento del array (con lastIndex): " + numeros[lastIndex])
+
+
+//Modificar elemntos de un array
+const numbers = [0, 1, 2, 3, 4, 5]
+numbers[0] = 10;
+numbers[1] = 20;
+console.log(numbers)
+
+
+////METODOS PARA MANIPULAR ARRAYS
+
+//Constructor de array
+const arr = Array();
+console.log(arr)
+
+const ochoValoresVacios = Array(8)
+console.log(ochoValoresVacios)
+
+//FILL: rellena un array con valores predefinidos, todos iguales
+const ochoValoresX = Array(8).fill('X')
+console.log(ochoValoresX)
+
+//CONCAT: concatenacion de arrays
+const numeros1 = [0, 1, 2, 3]
+const numeros2 = [4, 5, 6, 7]
+const numerosConcat = numeros1.concat(numeros2)
+console.log(numerosConcat)
+
+//LENGHT: longitud del array
+const numbers = [0, 1, 2, 3, 4, 5]
+console.log(numbers.length)
+
+//INDEXOF: saber si un elemento existe y su posicion dentro del array. Si no lo encuentra, muestra -1
+const numbers = [0, 1, 2, 3, 4, 5]
+console.log(numbers.indexOf(2))
+console.log(numbers.indexOf(6))
+
+const frutas = ["banano", "manzana", "naranja", "pera", "fresa"]
+console.log(frutas.indexOf("manzana"))
+
+//LASTINDEXOF: posicion del ultimo elemento dentro un array
+const frutas = ["banano", "manzana", "naranja", "pera", "fresa"]
+console.log(frutas.lastIndexOf("manzana"))
+
+//INCLUDES: verificar si un elemento existe en un array. 
+const frutas = ["banano", "manzana", "naranja", "pera", "fresa"]
+console.log(frutas.includes("manzana"))
+
+//ARRAY.ISARRAY: comprobar si el array es un array
+const frutas = ["banano", "manzana", "naranja", "pera", "fresa"]
+console.log(Array.isArray(frutas))
+
+//TOSTRING: convertir array en un string
+const numbers = [0, 1, 2, 3, 4, 5]
+console.log(numbers.toString())
+
+//JOIN: unir elementos de un array
+const frutas = ["banano", "manzana", "naranja", "pera", "fresa"]
+console.log(frutas.join(" / "))
+
+//SLICE: cortar elementos de un array
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+console.log(numbers.slice(1, 4)); // no incluye la posición final
+
+//SPLICE: Toma tres parámetros: posición inicial, número de elementos a eliminar y cantidad de elementos que se agregarán.
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+numbers.splice(1, 1, 22)
+console.log(numbers.splice(1, 1, 22));
+console.log(numbers);
+
+//PUSH: agregar elementos a un array
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+console.log(numbers)
+numbers.push(8, 9)
+console.log(numbers)
+
+//POP: eliminar el ultimo elemento del array
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+console.log(numbers)
+numbers.pop();
+console.log(numbers)
+
+//SHIFT: eliminar primer elemento del array
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+console.log(numbers)
+numbers.shift();
+console.log(numbers)
+
+//UNSHIFT: arrade un elemento al inicio del array
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+console.log(numbers)
+numbers.unshift('numeros');
+console.log(numbers)
+
+//REVERSE: invertir orden  del array
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+console.log(numbers)
+numbers.reverse();
+console.log(numbers)
+
+//SORT: ordena elementos en orden ascendente
+const numbers = [7, 4, 5, 6, 2, 1, 3];
+console.log(numbers)
+numbers.sort();
+console.log(numbers)
+
+////ARRAY DE ARRAYS: cada array denro del array de arrays cuenta como un elemento
+const numeros1 = [0, 1, 2, 3]
+const numeros2 = [4, 5, 6, 7]
+
+const allNums = [
+    [0, 1, 2, 3],
+    [4, 5, 6, 7]
+]
+console.log(allNums)
+
+const todosNums = [numeros1,numeros2]
+console.log(todosNums)
+console.log(todosNums.length); // 2
+console.log(todosNums[0]); // [0, 1, 2, 3]
+console.log(todosNums[1]); // [4, 5, 6, 7]

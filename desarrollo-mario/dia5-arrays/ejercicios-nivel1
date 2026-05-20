@@ -1,0 +1,18 @@
+// Ejercicios nivel 1
+
+//1. Declara un array vacío.
+const arr = Array()
+
+//2. Declara un array com mas de 5 elementos.
+const elementos = ["Monica", "Teresa", "Karen", "Jorge", "Yerladis", "Mario"]
+console.log(elementos)
+
+//3. Encuentra la longitud de tu array.
+console.log(elementos.length)
+
+//4. Obtenga el primer elemento, el elemento del medio y el último elemento de un array.
+const numeros = ['1','2','3','4','5','6','7']
+console.log("Primer elemento del array: " + numeros[0])
+console.log("Elemento de la mitad del array: " + numeros[3])
+console.log("Ultimo elemento del array: " + numeros[6])
+console.log("Ultimo elemento del array: " + numeros.lastIndexOf('7'))

@@ -1,0 +1,25 @@
+//condicionales
+
+//If, If Else, If Else If Else
+
+// Switch: condiciones en cada caso:
+let weather = "cloudy";
+switch (weather) {
+  case "rainy":
+    console.log("Necesitas un impermeable.");
+    break;
+  case "cloudy":
+    console.log("Puede que haga frío, necesitas una chaqueta.");
+    break;
+  case "sunny":
+    console.log("Sal tranquilo.");
+    break;
+  default:
+    console.log("No hay necesidad de un impermeable.");
+}
+
+// operadores ternarios
+let isRaining = true;
+isRaining
+  ? console.log("Necesitas un impermeable.")
+  : console.log("No hay necesidad de un impermeable.");

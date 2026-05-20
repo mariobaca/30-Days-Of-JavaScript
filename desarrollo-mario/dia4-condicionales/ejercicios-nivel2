@@ -1,0 +1,78 @@
+// ejercicios nivel 2
+
+//1. Escriba un código que pueda calificar a los estudiantes de acuerdo con sus puntajes:
+// 90-100, A
+// 70-89, B
+// 60-69, C
+// 50-59, D
+// 0-49, F
+
+
+let score = Number(prompt("Ingrese la calificacion del estudiante"))
+if (score > 90 && score < 100) {
+    console.log('A')
+} else if (score > 69 && score < 89) {
+    console.log('B')
+} else if (score > 59 && score < 70) {
+    console.log('C')
+} else if (score > 49 && score < 60) {
+    console.log('D')
+} else {
+    console.log('F')
+}
+
+
+//2. Consulta si la temporada es Otoño, Invierno, Primavera o Verano. Si la entrada del usuario es:
+// Septiembre, Octubre o Noviembre, la temporada es Otoño.
+// Diciembre, Enero o Febrero, la temporada es Invierno.
+// Marzo, Abril o Mayo, la temporada es Primavera
+// Junio, Julio o Agosto, la temporada es Verano
+
+let mes = prompt('Escribe un mes del año')
+let temporada;
+console.log('Escribiste el mes de:' + mes)
+
+let mesDato = mes.toLowerCase();
+switch (mesDato) {
+    case "septiembre":
+    case "octubre":
+    case "noviembre":
+        temporada = "Otoño";
+        console.log(`En ${mes} la temporada es ${temporada}`);
+    break;
+
+    case "diciembre":
+    case "enero":
+    case "febrero":
+        temporada = "Invierno";
+        console.log(`En ${mes} la temporada es ${temporada}`);
+    break;
+
+    case "marzo":
+    case "abril":
+    case "mayo":
+        temporada = "Primavera";
+        console.log(`En ${mes} la temporada es ${temporada}`);
+    break;
+
+    case "junio":
+    case "julio":
+    case "agosto":
+        temporada = "Verano";
+        console.log(`En ${mes} la temporada es ${temporada}`);
+    break;
+    default:
+    console.log("No es un mes valido");
+}
+
+
+
+//3. Compruebe si un día es un día de fin de semana o un día laborable. Su script tomará el día como entrada.
+let dia = prompt('Escribe un dia de la semana').toLowerCase();
+if(dia == 'sabado' || dia == 'domingo'){
+    console.log(`¿Qué día es hoy? ${dia}`)
+    console.log(`El ${dia} es fin de semana`)
+} else {
+    console.log(`¿Qué día es hoy? ${dia}`)
+    console.log(`El ${dia} es día laborable`)
+}
