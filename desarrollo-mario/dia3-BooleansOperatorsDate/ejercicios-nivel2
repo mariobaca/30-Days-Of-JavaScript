@@ -59,3 +59,70 @@ let tarifaHora = Number(prompt("Ingrese la tarifa por hora", "El número va aqu�
 let salarioSemanal = tarifaHora * horas;
 alert("Su ganancia semanal es:" + salarioSemanal);
 
+//10. Compare la longitud de su nombre y la longitud de su apellido y debería obtener este resultado.
+
+let firstName = "Asabeneh";
+let lastName = "Yetaye";
+let comparition = firstName.length > lastName.length;
+
+if (comparition === true) {
+    console.log(`Tu primer nombre, ${firstName}, es más largo que tu apellido, ${lastName}`)
+} else {
+    console.log(`Tu primer nombre, ${firstName}, es más corto que tu apellido, ${lastName}`)
+}
+
+//11. Condicion en una sola linea (operador ternario)
+let comparacion = firstName.length > lastName.length ? `Tu primer nombre, ${firstName}, es más largo que tu apellido, ${lastName}` : `Tu primer nombre, ${firstName}, es más corto que tu apellido, ${lastName}`;
+
+console.log(comparacion)
+
+
+//12. Declare dos variables myAge y yourAge y asignarles los valores iniciales y myAge y yourAge.
+let myAge = 250;
+let yourAge = 25;
+console.log(`Soy ${myAge - yourAge} años mayor que tu!`);
+
+//13. Usando prompt, obtenga el año en que nació el usuario y, si el usuario tiene 18 años o más, permita que el usuario conduzca, si no dígale que espere una cierta cantidad de años.
+const now = new Date();
+const anoActual = now.getFullYear();
+console.log('Año Actual:' + anoActual);
+let anosUsuarioPrompt = prompt("Ingrese su año de nacimiento");
+let legalAge = 18;
+let calculoAnosUsuario = anoActual - anosUsuarioPrompt
+console.log('Años Usuario:' + calculoAnosUsuario);
+
+if (calculoAnosUsuario >= legalAge) {
+    console.log(`Tienes ${calculoAnosUsuario} años. Tienes la edad suficiente para conducir.`);
+} else {
+    console.log(`Tienes ${calculoAnosUsuario} años. Podras conducir en ${legalAge - calculoAnosUsuario}`);
+}
+
+//14. Escriba un script que solicite por prompt al usuario que ingrese el número de años. Calcular el número de segundos que puede vivir una persona. Supongamos que alguien vive solo cien años 
+const now = new Date();
+const anoActual = now.getFullYear();
+console.log('Año Actual:' + anoActual);
+const secondsInYear = 365 * 24 * 60 * 60;
+
+let anosUsuarioPrompt = prompt("Ingrese sus años");
+let calculoNaciUsuario = anoActual - anosUsuarioPrompt
+console.log('Año Nacimiento Usuario:' + calculoNaciUsuario);
+console.log('Años Usuario:' + anosUsuarioPrompt)
+
+let secondsPassed = anosUsuarioPrompt * secondsInYear;
+console.log(`Segundos que puede vivir a la edad de ${anosUsuarioPrompt}:` + secondsPassed);
+
+//15. Cree un formato de hora legible por humanos usando el objeto Date.
+
+const now = new Date();
+const year = now.getFullYear(); // return años
+const month = now.getMonth() + 1; // return meses(0 - 11)
+const date = now.getDate(); // return días (1 - 31)
+const hours = now.getHours(); // return horas (0 - 23)
+const minutes = now.getMinutes(); // return minutos (0 -59)
+
+//YYYY-MM-DD HH:mm
+console.log(`${year}-${month}-${date} ${hours}:${minutes}`);
+//DD-MM-YYYY HH:mm
+console.log(`${date}-${month}-${year} ${hours}:${minutes}`);
+//DD/MM/YYYY HH:mm
+console.log(`${date}/${month}/${year} ${hours}:${minutes}`);
