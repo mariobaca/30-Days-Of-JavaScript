@@ -32,24 +32,24 @@ console.log(range)
 
 
 // Compare the value of (min - average) and (max - average), use abs() method 1.
-Math.abs(agesMin-average) < Math.abs(agesmax-average) ? console.log("Data is left skewed"): console.log('Data is right skewed!');
+Math.abs(agesMin - average) < Math.abs(agesmax - average) ? console.log("Data is left skewed") : console.log('Data is right skewed!');
 
 //Slice the first ten countries from the countries array
 const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya'
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
 ]
 
-console.log(countries.slice(0,10))
+console.log(countries.slice(0, 10))
 
 //2. Find the middle country(ies) in the countries array
 const midIndex = Math.floor(countries.length / 2);
